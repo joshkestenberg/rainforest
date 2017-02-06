@@ -1,0 +1,13 @@
+<div class="page title">
+  <h1>Products</h1>
+</div>
+
+<div class="product_nav">
+  <%= link_to("Sign Up", new_product_path) %> | <%= link_to("Log In", new_product_path) %> | <%= link_to("New Product", new_product_path)  %>
+</div>
+
+<main>
+  <div class="all">
+    <%= render @products %>
+  </div>
+</main>

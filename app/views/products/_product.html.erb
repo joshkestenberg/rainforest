@@ -1,0 +1,12 @@
+<div class="p_name">
+  <%= "Name: #{product.name}" %>
+</div>
+<div class="p_image">
+  <%= link_to image_tag(product.image_url, size: "400px"), product_path(product.id)%>
+</div>
+<div class="p_descript">
+  <%= "Description: #{product.description}" %>
+</div>
+<div class="p_price">
+  <%= "Price: #{product.price_in_cents}" %>
+</div>
